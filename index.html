@@ -1,6 +1,6 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -8,1550 +8,302 @@
 content="width=device-width,initial-scale=1.0">
 
 <title>
-❤️ HAPPIEST BIRTHDAY MY DEAR LOVE ❤️
+Happiest Birthday My Dear Love ❤️
 </title>
 
-<link rel="stylesheet"
-href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-rel="stylesheet">
-
-</head>
-
-<body>
-
-<!-- HEARTS -->
-<div id="hearts"></div>
-
-<!-- INTRO -->
-
-<section id="intro">
-
-<div class="intro-card">
-
-<h1 class="title">
-
-HAPPIEST BIRTHDAY,<br>
-MY DEAR LOVE....<br>
-
-♡5♡7♡6💌
-
-</h1>
-
-<div class="english-box">
-
-<p id="englishText">
-
-</p>
-
-</div>
-
-<button id="playBtn">
-
-🫂 PLAY OUR SONG 🫂
-
-</button>
-
-</div>
-
-</section>
-
-
-<!-- PHOTO SECTION -->
-
-<section id="photos">
-
-<div class="photo-container">
-
-<img
-src="photo1.jpg"
-class="photo active">
-
-<img
-src="photo2.jpg"
-class="photo">
-
-<img
-src="photo3.jpg"
-class="photo">
-
-<img
-src="photo4.jpg"
-class="photo">
-
-<img
-src="photo5.jpg"
-class="photo">
-
-<img
-src="photo6.jpg"
-class="photo">
-
-<img
-src="photo7.jpg"
-class="photo">
-
-<img
-src="photo8.jpg"
-class="photo">
-
-<img
-src="photo9.jpg"
-class="photo">
-
-<img
-src="photo10.jpg"
-class="photo">
-
-<img
-src="photo11.jpg"
-class="photo">
-
-</div>
-
-<div class="photo-text">
-
-<p id="photoLine"></p>
-
-</div>
-
-</section>
-
-
-<!-- TELUGU MESSAGE -->
-
-<section id="loveStory">
-
-<div class="story-box">
-
-<p id="storyText">
-
-</p>
-
-</div>
-
-</section>
-
-
-<!-- OCEAN -->
-
-<section id="ocean">
-
-<div class="ocean-text">
-
-I LOVE YOU,<br>
-
-MY DEAR<br>
-
-DEEPU BANGARAM ❤️
-
-</div>
-
-</section>
-
-
-<!-- FINAL -->
-
-<section id="final">
-
-<div class="final-card">
-
-<h1>
-
-THANK YOU SO MUCH,
-MY LOVE ❤️
-
-</h1>
-
-<p>
-
-Natho untunna
-annadhuku...
-
-Naku ee life
-ichina andhuku...
-
-Ila na life
-motham undipo
-ra potti na kodaka ❤️
-
-</p>
-
-<div class="your-man">
-
-❤️ IT'S YOUR MAN ❤️
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- MUSIC -->
-
-<audio
-id="music"
-loop>
-
-<source
-src="song.mp3"
-type="audio/mpeg">
-
-</audio>
-
-
-<script
-src="script.js">
-
-</script>
-
-</body>
-</html>
-```
-```css id="st2x9m"
-/* =========================
-   GLOBAL
-========================= */
+<style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-}
-
-html,body{
-width:100%;
-height:100%;
-overflow:hidden;
 font-family:'Poppins',sans-serif;
-background:black;
 }
 
-/* =========================
-   HEARTS
-========================= */
-
-#hearts{
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-pointer-events:none;
-
-z-index:999;
+body{
 
 overflow:hidden;
-
-}
-
-/* =========================
-   INTRO
-========================= */
-
-#intro{
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
 
 background:
 linear-gradient(
 135deg,
-#ff1493,
+#ffb6c1,
 #ff69b4,
-#ff1493,
-#ff85c2
-);
+#ff1493);
 
-background-size:
-400% 400%;
-
-animation:
-bgMove 10s linear infinite;
-
-}
-
-/* =========================
-   CARD
-========================= */
-
-.intro-card{
-
-width:90%;
-
-max-width:950px;
-
-padding:40px;
-
-border-radius:30px;
-
-background:
-rgba(255,255,255,.08);
-
-backdrop-filter:
-blur(20px);
-
-box-shadow:
-0 0 60px
-rgba(255,255,255,.2);
-
-text-align:center;
-
-}
-
-/* =========================
-   TITLE
-========================= */
-
-.title{
+height:100vh;
 
 color:white;
-
-font-size:55px;
-
-line-height:1.5;
-
-text-shadow:
-0 0 20px white,
-0 0 40px hotpink,
-0 0 80px deeppink;
-
-animation:
-glow 2s infinite alternate;
-
 }
 
-/* =========================
-   MESSAGE BOX
-========================= */
-
-.english-box{
-
-margin-top:25px;
-
-height:260px;
-
-overflow:hidden;
-
-padding:20px;
-
-border-radius:20px;
-
-background:
-rgba(255,255,255,.08);
-
-box-shadow:
-0 0 25px
-rgba(255,255,255,.15);
-
-}
-
-#englishText{
-
-color:white;
-
-font-size:22px;
-
-line-height:2;
-
-white-space:pre-wrap;
-
-text-align:center;
-
-}
-
-/* =========================
-   BUTTON
-========================= */
+/* HEART BUTTON */
 
 #playBtn{
 
-margin-top:30px;
+position:fixed;
 
-padding:18px 50px;
+left:20px;
+
+top:20px;
+
+width:90px;
+
+height:90px;
 
 border:none;
 
-border-radius:50px;
+border-radius:50%;
 
-font-size:22px;
+background:
+rgba(255,255,255,.2);
 
-font-weight:bold;
+backdrop-filter:
+blur(10px);
+
+font-size:45px;
 
 cursor:pointer;
 
-color:white;
+z-index:999;
+}
+
+/* INTRO */
+
+#intro{
+
+position:absolute;
+
+width:100%;
+
+height:100vh;
+
+overflow:hidden;
 
 background:
 linear-gradient(
-90deg,
-#ff1493,
-#ff69b4
-);
+#ffc0cb,
+#ff69b4);
+}
 
-box-shadow:
-0 0 30px hotpink;
+#introText{
 
-transition:.4s;
+position:absolute;
+
+width:80%;
+
+left:10%;
+
+font-size:23px;
+
+line-height:2;
+
+text-align:center;
 
 animation:
-pulse 2s infinite;
-
+introScroll
+35s linear forwards;
 }
 
-#playBtn:hover{
-
-transform:
-scale(1.1);
-
-}
-
-/* =========================
-   EFFECTS
-========================= */
-
-@keyframes glow{
+@keyframes introScroll{
 
 from{
 
-text-shadow:
-0 0 20px white,
-0 0 40px hotpink;
+top:100%;
 
+opacity:0;
 }
 
 to{
 
-text-shadow:
-0 0 40px white,
-0 0 80px deeppink,
-0 0 100px hotpink;
+top:-170%;
 
+opacity:1;
+}
 }
 
-}
+/* SLIDESHOW */
 
-@keyframes pulse{
-
-0%{
-transform:scale(1);
-}
-
-50%{
-transform:scale(1.05);
-}
-
-100%{
-transform:scale(1);
-}
-
-}
-
-@keyframes bgMove{
-
-0%{
-background-position:
-0% 50%;
-}
-
-50%{
-background-position:
-100% 50%;
-}
-
-100%{
-background-position:
-0% 50%;
-}
-
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:768px){
-
-.title{
-
-font-size:30px;
-
-}
-
-#englishText{
-
-font-size:16px;
-
-line-height:1.8;
-
-}
-
-#playBtn{
-
-font-size:18px;
-
-padding:15px 30px;
-
-}
-
-}
-```
-```css id="photo3x"
-/* =========================
-   PHOTO SECTION
-========================= */
-
-#photos{
+#slideshow{
 
 display:none;
 
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:black;
-
-overflow:hidden;
-
-}
-
-/* =========================
-   PHOTO CONTAINER
-========================= */
-
-.photo-container{
-
-position:absolute;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-overflow:hidden;
-
-}
-
-/* =========================
-   PHOTOS
-========================= */
-
-.photo{
-
 position:absolute;
 
 width:100%;
+
 height:100%;
-
-object-fit:contain;
-
-background:black;
-
-opacity:0;
-
-transform:scale(1);
-
-transition:
-opacity 2s ease,
-transform 6s linear;
-
-filter:
-brightness(95%)
-contrast(110%)
-saturate(110%);
-
-}
-
-.photo.active{
-
-opacity:1;
-
-transform:
-scale(1.08);
-
-animation:
-cinematic 6s linear;
-
-}
-
-/* =========================
-   CINEMATIC EFFECT
-========================= */
-
-@keyframes cinematic{
-
-0%{
-
-transform:
-scale(1);
-
-}
-
-100%{
-
-transform:
-scale(1.08);
-
-}
-
-}
-
-/* =========================
-   DARK LAYER
-========================= */
-
-#photos::after{
-
-content:"";
-
-position:absolute;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:
-linear-gradient(
-to top,
-rgba(0,0,0,.8),
-rgba(0,0,0,.1)
-);
-
-pointer-events:none;
-
-}
-
-/* =========================
-   PHOTO TEXT
-========================= */
-
-.photo-text{
-
-position:absolute;
-
-bottom:50px;
-
-left:50%;
-
-transform:
-translateX(-50%);
-
-width:90%;
-
-max-width:1000px;
-
-z-index:100;
 
 text-align:center;
-
 }
 
-#photoLine{
+#slideContainer{
 
-color:white;
+position:relative;
 
-font-size:30px;
+display:inline-block;
 
-font-weight:600;
+margin-top:30px;
+}
 
-line-height:1.8;
+#slideImage{
 
-padding:20px;
+width:380px;
+
+height:520px;
+
+object-fit:cover;
 
 border-radius:25px;
 
-background:
-rgba(255,20,147,.18);
-
-backdrop-filter:
-blur(15px);
-
 box-shadow:
-0 0 30px
-rgba(255,20,147,.5);
-
-text-shadow:
-0 0 15px black,
-0 0 25px hotpink;
-
-animation:
-captionFade 2s;
-
+0 0 50px
+rgba(255,255,255,.5);
 }
 
-@keyframes captionFade{
-
-0%{
-
-opacity:0;
-
-transform:
-translateY(40px);
-
-}
-
-100%{
-
-opacity:1;
-
-transform:
-translateY(0);
-
-}
-
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:768px){
-
-#photoLine{
-
-font-size:18px;
-
-line-height:1.6;
-
-padding:15px;
-
-}
-
-}
-```
-```css id="love4p"
-/* =========================
-   LOVE STORY SECTION
-========================= */
-
-#loveStory{
-
-display:none;
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-overflow:hidden;
-
-background:
-linear-gradient(
-45deg,
-#ff1493,
-#ff69b4,
-#ff4500,
-#9400d3,
-#ff1493
-);
-
-background-size:
-400% 400%;
-
-animation:
-romanticBG 15s ease infinite;
-
-}
-
-/* =========================
-   STORY BOX
-========================= */
-
-.story-box{
+#slideText{
 
 position:absolute;
 
-top:50%;
+bottom:20px;
+
 left:50%;
 
 transform:
-translate(-50%,-50%);
+translateX(-50%);
 
 width:90%;
 
-max-width:1000px;
-
-height:80%;
-
-overflow:hidden;
-
-padding:30px;
-
-border-radius:30px;
-
 background:
-rgba(255,255,255,.10);
+rgba(255,0,100,.4);
+
+padding:15px;
+
+border-radius:15px;
+
+font-size:22px;
 
 backdrop-filter:
-blur(20px);
-
-box-shadow:
-0 0 50px
-rgba(255,255,255,.25);
-
+blur(8px);
 }
 
-/* =========================
-   STORY TEXT
-========================= */
-
-#storyText{
-
-position:absolute;
-
-width:100%;
-
-padding-right:50px;
-
-color:white;
-
-font-size:28px;
-
-line-height:2.2;
-
-text-align:center;
-
-white-space:pre-wrap;
-
-text-shadow:
-0 0 15px black,
-0 0 25px hotpink;
-
-animation:
-storyScroll 30s linear forwards;
-
-}
-
-/* =========================
-   SCROLL EFFECT
-========================= */
-
-@keyframes storyScroll{
-
-0%{
-
-transform:
-translateY(100%);
-
-opacity:0;
-
-}
-
-10%{
-
-opacity:1;
-
-}
-
-90%{
-
-opacity:1;
-
-}
-
-100%{
-
-transform:
-translateY(-120%);
-
-opacity:0;
-
-}
-
-}
-
-/* =========================
-   COLOR BACKGROUND
-========================= */
-
-@keyframes romanticBG{
-
-0%{
-background-position:
-0% 50%;
-}
-
-50%{
-background-position:
-100% 50%;
-}
-
-100%{
-background-position:
-0% 50%;
-}
-
-}
-
-/* =========================
-   FLOATING SPARKLES
-========================= */
-
-.story-box::before{
-
-content:"✨ 💖 ✨";
-
-position:absolute;
-
-top:20px;
-right:20px;
-
-font-size:35px;
-
-animation:
-sparkle 2s infinite;
-
-}
-
-@keyframes sparkle{
-
-0%{
-transform:
-scale(1);
-}
-
-50%{
-transform:
-scale(1.2);
-}
-
-100%{
-transform:
-scale(1);
-}
-
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:768px){
-
-#storyText{
-
-font-size:18px;
-
-line-height:1.8;
-
-}
-
-.story-box{
-
-height:85%;
-
-}
-
-}
-```
-```css id="ocean5x"
-/* =========================
-   OCEAN SECTION
-========================= */
-
-#ocean{
-
-display:none;
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-overflow:hidden;
-
-background:
-linear-gradient(
-to bottom,
-#001a33,
-#003366,
-#006699,
-#00aaff
-);
-
-animation:
-oceanColor 12s ease infinite;
-
-}
-
-/* =========================
-   OCEAN WAVES
-========================= */
-
-#ocean::before{
-
-content:"";
-
-position:absolute;
-
-bottom:-100px;
-left:-50%;
-
-width:200%;
-height:300px;
-
-background:
-rgba(255,255,255,.15);
-
-border-radius:50%;
-
-animation:
-waveMove 8s linear infinite;
-
-}
-
-#ocean::after{
-
-content:"";
-
-position:absolute;
-
-bottom:-150px;
-left:-50%;
-
-width:200%;
-height:250px;
-
-background:
-rgba(255,255,255,.08);
-
-border-radius:50%;
-
-animation:
-waveMove2 12s linear infinite;
-
-}
-
-@keyframes waveMove{
-
-0%{
-transform:
-translateX(0);
-}
-
-100%{
-transform:
-translateX(-50%);
-}
-
-}
-
-@keyframes waveMove2{
-
-0%{
-transform:
-translateX(-20%);
-}
-
-100%{
-transform:
-translateX(-70%);
-}
-
-}
-
-/* =========================
-   OCEAN MESSAGE
-========================= */
-
-.ocean-text{
-
-position:absolute;
-
-top:50%;
-left:50%;
-
-transform:
-translate(-50%,-50%);
-
-text-align:center;
-
-color:white;
-
-font-size:55px;
-
-font-weight:bold;
-
-text-shadow:
-0 0 20px white,
-0 0 40px hotpink,
-0 0 80px deeppink;
-
-animation:
-oceanRise 7s ease forwards;
-
-}
-
-/* =========================
-   MESSAGE RISE
-========================= */
-
-@keyframes oceanRise{
-
-0%{
-
-opacity:0;
-
-transform:
-translate(-50%,300px)
-scale(.2);
-
-}
-
-100%{
-
-opacity:1;
-
-transform:
-translate(-50%,-50%)
-scale(1);
-
-}
-
-}
-
-/* =========================
-   HEART RAIN
-========================= */
-
-.heart{
-
-position:absolute;
-
-top:-50px;
-
-font-size:30px;
-
-color:#ff2d75;
-
-animation:
-heartRain linear forwards;
-
-}
-
-@keyframes heartRain{
-
-0%{
-
-transform:
-translateY(0)
-rotate(0deg);
-
-opacity:1;
-
-}
-
-100%{
-
-transform:
-translateY(110vh)
-rotate(360deg);
-
-opacity:0;
-
-}
-
-}
-
-/* =========================
-   OCEAN COLORS
-========================= */
-
-@keyframes oceanColor{
-
-0%{
-filter:hue-rotate(0deg);
-}
-
-50%{
-filter:hue-rotate(40deg);
-}
-
-100%{
-filter:hue-rotate(0deg);
-}
-
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:768px){
-
-.ocean-text{
-
-font-size:28px;
-
-padding:20px;
-
-}
-
-.heart{
-
-font-size:20px;
-
-}
-
-}
-```
-```css id="final6x"
-/* =========================
-   FINAL SECTION
-========================= */
+/* FINAL */
 
 #final{
 
 display:none;
 
-position:fixed;
-
-top:0;
-left:0;
+position:absolute;
 
 width:100%;
-height:100%;
+
+height:100vh;
 
 overflow:hidden;
 
 background:
 linear-gradient(
-135deg,
-#ff1493,
-#ff69b4,
-#ffb6c1,
-#ff1493
-);
-
-background-size:
-400% 400%;
-
-animation:
-finalBG 12s linear infinite;
-
+#ffc0cb,
+#ff1493);
 }
 
-/* =========================
-   HUG BACKGROUND
-========================= */
-
-#final::before{
-
-content:
-"🫂 🫂 🫂 🫂 🫂 🫂 🫂 🫂";
+#finalText{
 
 position:absolute;
 
-top:0;
-left:0;
+width:80%;
 
-width:100%;
-height:100%;
+left:10%;
 
-font-size:90px;
+font-size:24px;
 
-opacity:.12;
+line-height:2;
 
-word-spacing:40px;
-
-line-height:180px;
+text-align:center;
 
 animation:
-hugMove 20s linear infinite;
-
+finalScroll
+40s linear forwards;
 }
 
-@keyframes hugMove{
+@keyframes finalScroll{
 
-0%{
-transform:
-translateY(0);
+from{
+top:100%;
 }
 
-100%{
-transform:
-translateY(-200px);
+to{
+top:-200%;
+}
 }
 
-}
+/* LAST LOVE */
 
-@keyframes finalBG{
+#loveFinal{
 
-0%{
-background-position:
-0% 50%;
-}
+display:none;
 
-50%{
-background-position:
-100% 50%;
-}
-
-100%{
-background-position:
-0% 50%;
-}
-
-}
-
-/* =========================
-   FINAL CARD
-========================= */
-
-.final-card{
-
-position:absolute;
+position:fixed;
 
 top:50%;
+
 left:50%;
 
 transform:
 translate(-50%,-50%);
 
-width:90%;
-
-max-width:900px;
-
-padding:40px;
+font-size:60px;
 
 text-align:center;
 
-background:
-rgba(255,255,255,.10);
-
-backdrop-filter:
-blur(20px);
-
-border-radius:30px;
-
-box-shadow:
-0 0 50px
-rgba(255,255,255,.30);
-
-}
-
-/* =========================
-   TITLE
-========================= */
-
-.final-card h1{
-
-font-size:55px;
-
-color:white;
-
-text-shadow:
-0 0 20px hotpink,
-0 0 50px white;
-
-animation:
-loveGlow 2s infinite alternate;
-
-}
-
-@keyframes loveGlow{
-
-from{
-
-text-shadow:
-0 0 20px hotpink,
-0 0 40px white;
-
-}
-
-to{
-
-text-shadow:
-0 0 40px hotpink,
-0 0 80px deeppink,
-0 0 100px white;
-
-}
-
-}
-
-/* =========================
-   MESSAGE
-========================= */
-
-.final-card p{
-
-margin-top:30px;
-
-font-size:28px;
-
-line-height:2;
-
-color:white;
-
-text-shadow:
-0 0 10px black;
-
-}
-
-/* =========================
-   ITS YOUR MAN
-========================= */
-
-.your-man{
-
-position:absolute;
-
-right:20px;
-bottom:20px;
-
-padding:15px 30px;
-
-border-radius:50px;
-
-background:
-rgba(255,20,147,.3);
-
-color:white;
-
-font-size:24px;
-
 font-weight:bold;
 
-box-shadow:
-0 0 30px hotpink;
+text-shadow:
+0 0 30px red;
 
-animation:
-pulseMan 2s infinite;
-
+z-index:9999;
 }
 
-@keyframes pulseMan{
+</style>
 
-0%{
-transform:scale(1);
-}
+</head>
 
-50%{
-transform:scale(1.08);
-}
+<body>
 
-100%{
-transform:scale(1);
-}
+<button id="playBtn">
+❤️
+</button>
 
-}
+<audio id="music" loop>
+<source
+src="song.mp3"
+type="audio/mpeg">
+</audio>
 
-/* =========================
-   MOBILE
-========================= */
+<div id="intro">
 
-@media(max-width:768px){
+<div id="introText">
 
-.final-card h1{
+<h1>
 
-font-size:32px;
+HAPPIEST BIRTHDAY,
+MY DEAR LOVE....
+♡5.♡7.♡6💌
 
-}
+</h1>
 
-.final-card p{
+<br>
 
-font-size:18px;
+Don't fall in love with me
+Because I don't know how
+to love "normal".
 
-line-height:1.8;
-
-}
-
-.your-man{
-
-font-size:16px;
-
-right:10px;
-bottom:10px;
-
-padding:10px 20px;
-
-}
-
-}
-```
-```javascript id="part7js"
-// =========================
-// ELEMENTS
-// =========================
-
-const intro =
-document.getElementById(
-"intro"
-);
-
-const photos =
-document.getElementById(
-"photos"
-);
-
-const playBtn =
-document.getElementById(
-"playBtn"
-);
-
-const englishText =
-document.getElementById(
-"englishText"
-);
-
-const music =
-document.getElementById(
-"music"
-);
-
-const hearts =
-document.getElementById(
-"hearts"
-);
-
-// =========================
-// ENGLISH MESSAGE
-// =========================
-
-const englishMessage =
-
-`Don't fall in love with me
-
-Because I don't know
-how to love "normal"
-
-I only know
-how to love to death
+I only know how
+to love to death.
 
 Without any measure
-of limits
+of limits.
 
 I will love you
 like eyes gazing
@@ -1561,81 +313,196 @@ for every second
 I spent with you.
 
 I will kiss your scars
-and cherish
-your darkest parts.
+and cherish your
+darkest parts.
 
 I will not love you
-for the person
-you show to this world.
+for the person you show
+to this world.
 
 But I will love you
 for who you are.
 
-Don't fall in love
-with me.
+Don't fall in love with me.
 
 Because I will create
 a room in your heart.
 
-My love will paint
+And my love
+will paint so many
 marks on your soul.
 
+You will not just
+miss me casually.
+
 You will miss me
-in every small thing.
+in every small thing
+that reminds you
+of me.
 
 The room I created
 will become
 a painful space.
 
-A space
-you can never fill.
+A space you
+can never fill.
 
 Don't fall in love
 with me.
 
-Because I will reach
-the depths
+Because I will
+reach the depths
 of your soul.
 
-And then
-there is no
-coming back.`;
+And then there
+is no coming back.
 
-let i = 0;
+</div>
 
-// =========================
-// TYPE EFFECT
-// =========================
+</div>
 
-function revealEnglish(){
+<div id="slideshow">
 
-if(i <
-englishMessage.length){
+<div id="slideContainer">
 
-englishText.innerHTML +=
-englishMessage.charAt(i);
+<img
+id="slideImage"
+src="photo1.jpg">
 
-i++;
+<div id="slideText">
+</div>
 
-setTimeout(
-revealEnglish,
-60
-);
+</div>
 
+</div>
+
+<div id="final">
+
+<div id="finalText">
+</div>
+
+</div>
+
+<div id="loveFinal">
+
+I LOVE YOU
+<br>
+MY DEAR
+<br>
+DEEPU
+BANGARAM
+
+</div>
+<style>
+
+/* HEART RAIN */
+
+.heart{
+
+position:fixed;
+
+top:-50px;
+
+pointer-events:none;
+
+z-index:5;
+
+animation:
+heartFall
+linear forwards;
 }
 
+@keyframes heartFall{
+
+0%{
+transform:
+translateY(-50px)
+rotate(0deg);
+opacity:1;
 }
 
-// =========================
-// HEARTS
-// =========================
+100%{
+transform:
+translateY(120vh)
+rotate(360deg);
+opacity:0;
+}
+}
+
+/* BALLOONS */
+
+.balloon{
+
+position:fixed;
+
+bottom:-100px;
+
+pointer-events:none;
+
+z-index:4;
+
+animation:
+balloonUp
+linear forwards;
+}
+
+@keyframes balloonUp{
+
+0%{
+transform:
+translateY(0);
+opacity:1;
+}
+
+100%{
+transform:
+translateY(-120vh);
+opacity:0;
+}
+}
+
+/* SPARKLES */
+
+.sparkle{
+
+position:fixed;
+
+pointer-events:none;
+
+z-index:3;
+
+animation:
+sparkAnim
+2s linear forwards;
+}
+
+@keyframes sparkAnim{
+
+0%{
+opacity:1;
+transform:
+scale(.5);
+}
+
+100%{
+opacity:0;
+transform:
+scale(2);
+}
+}
+
+</style>
+
+
+<script>
+
+/* HEARTS */
 
 function createHeart(){
 
-const h =
+let h =
 document.createElement(
-"div"
-);
+"div");
 
 h.className =
 "heart";
@@ -1645,14 +512,979 @@ h.innerHTML =
 
 h.style.left =
 Math.random()*100
-+"%";
++"vw";
+
+h.style.fontSize =
+(20+
+Math.random()*50)
++"px";
 
 h.style.animationDuration =
 (4+
 Math.random()*4)
 +"s";
 
-hearts.appendChild(h);
+document.body
+.appendChild(h);
+
+setTimeout(()=>{
+
+h.remove();
+
+},8000);
+}
+
+setInterval(
+createHeart,
+150);
+
+
+/* BALLOONS */
+
+function createBalloon(){
+
+let b =
+document.createElement(
+"div");
+
+b.className =
+"balloon";
+
+b.innerHTML =
+"🎈";
+
+b.style.left =
+Math.random()*100
++"vw";
+
+b.style.fontSize =
+(40+
+Math.random()*30)
++"px";
+
+b.style.animationDuration =
+(8+
+Math.random()*5)
++"s";
+
+document.body
+.appendChild(b);
+
+setTimeout(()=>{
+
+b.remove();
+
+},13000);
+}
+
+setInterval(
+createBalloon,
+1200);
+
+
+/* SPARKLES */
+
+function createSparkle(){
+
+let s =
+document.createElement(
+"div");
+
+s.className =
+"sparkle";
+
+s.innerHTML =
+"✨";
+
+s.style.left =
+Math.random()*100
++"vw";
+
+s.style.top =
+Math.random()*100
++"vh";
+
+s.style.fontSize =
+(10+
+Math.random()*20)
++"px";
+
+document.body
+.appendChild(s);
+
+setTimeout(()=>{
+
+s.remove();
+
+},2000);
+}
+
+setInterval(
+createSparkle,
+300);
+
+</script>
+<script>
+
+/* MUSIC BUTTON */
+
+const music =
+document.getElementById(
+"music");
+
+const playBtn =
+document.getElementById(
+"playBtn");
+
+playBtn.onclick =
+function(){
+
+if(music.paused){
+
+music.play();
+
+playBtn.innerHTML =
+"💖";
+
+}
+else{
+
+music.pause();
+
+playBtn.innerHTML =
+"❤️";
+
+}
+
+};
+
+
+/* PHOTOS */
+
+const photos = [
+
+"photo1.jpg",
+"photo2.jpg",
+"photo3.jpg",
+"photo4.jpg",
+"photo5.jpg",
+"photo6.jpg",
+"photo7.jpg",
+"photo8.jpg",
+"photo9.jpg",
+"photo10.jpg",
+"photo11.jpg"
+
+];
+
+
+/* PHOTO LINES */
+
+const lines = [
+
+"Oka chance isthava? Jeevitantam motham 🫀 ikkada pettukoni chusukunta.",
+
+"Padhi nelalu mosi kanna mee ammakku nuvvu sonthamaithe, innaaluga manasulo mostunna naku kuda nuvvu sontamey...",
+
+"Prema andhariki dhorakadhu. Dhorikithey poraadaali.",
+
+"Rallani poojinche desham lo raathi ni premichadam thappemi kadhu.",
+
+"Entha thittukuna kottukunna No one can replace you, bangaram.",
+
+"Opika ekkuva em cheppina vintavu. Kashtam ayina, sukham ayina life is always better with You.",
+
+"Eh problem vachina she is always there to fight against the world, holding my hand.",
+
+"Life bagundhi ra deepu. Nitho life motham nithoney gadipovale ani undhi ra, chavvu ayina brathuku ayina.",
+
+"Ni prema kosamey jeevistha. Ni kosamey premistha. Nithoney naa oopirini vadilestha.",
+
+"Na kallutho chusina ni prema naa kallalu nuvve unte bagundhi anipisthundhi.",
+
+"Chachipoye antha prema undhi ra ni midha kani aa chavvu ni kuda champeysthundhi nepye naa prema."
+
+];
+
+</script>
+<script>
+
+/* CURRENT PHOTO */
+
+let currentPhoto = 0;
+
+
+/* INTRO COMPLETE */
+
+setTimeout(function(){
+
+document
+.getElementById(
+"intro")
+.style.display =
+"none";
+
+document
+.getElementById(
+"slideshow")
+.style.display =
+"block";
+
+showPhoto();
+
+},35000);
+
+
+/* SHOW PHOTO */
+
+function showPhoto(){
+
+document
+.getElementById(
+"slideImage")
+.src =
+photos[
+currentPhoto
+];
+
+document
+.getElementById(
+"slideText")
+.innerHTML =
+lines[
+currentPhoto
+];
+
+/* PHOTO ANIMATION */
+
+const img =
+document
+.getElementById(
+"slideImage");
+
+img.style.animation =
+"none";
+
+void img.offsetWidth;
+
+img.style.animation =
+"photoZoom 7s linear";
+
+
+currentPhoto++;
+
+
+/* NEXT PHOTO */
+
+if(
+currentPhoto
+<
+photos.length
+){
+
+setTimeout(
+
+showPhoto,
+
+7000
+
+);
+
+}
+else{
+
+setTimeout(
+
+showFinal,
+
+7000
+
+);
+
+}
+
+}
+
+</script>
+
+
+<style>
+
+/* PHOTO ZOOM */
+
+@keyframes
+photoZoom{
+
+0%{
+
+transform:
+scale(.8);
+
+opacity:0;
+}
+
+30%{
+
+opacity:1;
+}
+
+100%{
+
+transform:
+scale(1.08);
+
+opacity:1;
+}
+
+}
+
+
+/* TEXT FADE */
+
+#slideText{
+
+animation:
+fadeText
+2s ease;
+}
+
+@keyframes
+fadeText{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(
+40px
+);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+translateY(
+0px
+);
+
+}
+
+}
+
+</style>
+<script>
+
+/* FINAL MESSAGE */
+
+function showFinal(){
+
+document
+.getElementById(
+"slideshow")
+.style.display =
+"none";
+
+document
+.getElementById(
+"final")
+.style.display =
+"block";
+
+document
+.getElementById(
+"finalText")
+.innerHTML = `
+
+మనం మొదటిసారి కలిసినప్పుడు,<br><br>
+
+నాకు కావలసింది కేవలం
+ఒక స్నేహం మాత్రమే.<br>
+
+ప్రేమలో పడతానని నేను
+ఎప్పుడూ అనుకోలేదు.<br><br>
+
+ఎలాంటి వాగ్దానాలు లేవు...<br>
+ఎలాంటి కలలు లేవు...<br>
+ఎలాంటి ఆశలు కూడా లేవు...<br><br>
+
+నెమ్మదిగా
+మరచిపోలేని జ్ఞాపకంగా మారిన
+ఒక అందమైన స్నేహం మాత్రమే.<br><br>
+
+కొద్దికొద్దిగా...<br>
+
+మనం ఒకరినొకరం
+అర్థం చేసుకోవడం ప్రారంభించాం.<br>
+
+ఎక్కువగా మాట్లాడకపోయినా,<br>
+మన హృదయాలు మాత్రం
+దగ్గరయ్యాయి.<br><br>
+
+రోజులు నెలలుగా మారాయి...<br>
+
+ఆ ప్రయాణంలో ఎప్పుడో,<br>
+
+స్నేహం మరింత లోతైన
+బంధంగా మారిపోయింది.<br>
+
+మనం ఊహించని
+ఒక ప్రేమగా.<br><br>
+
+బహుశా ప్రేమ
+అలా మొదలవుతుందేమో...<br>
+
+పెద్ద పెద్ద
+వాగ్దానాలతో కాదు...<br>
+
+ఏమీ ఆశించకుండా
+కలిసిన ఇద్దరు అపరిచితులు,<br>
+
+ఒకరి జీవితంలో
+ఒకరు ఎంత ముఖ్యమో
+తెలుసుకునే
+ఆ నిశ్శబ్ద ప్రయాణంతో.... 💌<br><br>
+
+నా చివరి శ్వాస వరకు
+నేను నిన్ను
+ఎప్పటికీ
+ప్రేమిస్తూనే ఉంటాను. ❤️<br><br>
+
+HAPPIEST BIRTHDAY
+MY DEAR LOVE ❤️<br><br>
+
+♡5.♡7.♡6💌<br><br>
+
+నా బంగారానికి
+ఇప్పటికే 20 years వచ్చేసాయి,
+కానీ నువ్వు
+ఎప్పటికీ నాకు
+ఒక చిన్న పాపవే... 🫂
+
+`;
+
+setTimeout(
+
+showLastLove,
+
+40000
+
+);
+
+}
+
+</script>
+<style>
+
+/* FINAL HEART */
+
+.finalHeart{
+
+position:fixed;
+
+top:-50px;
+
+pointer-events:none;
+
+z-index:9999;
+
+animation:
+finalRain
+linear forwards;
+}
+
+@keyframes finalRain{
+
+0%{
+
+transform:
+translateY(-50px)
+rotate(0deg);
+
+opacity:1;
+}
+
+100%{
+
+transform:
+translateY(120vh)
+rotate(360deg);
+
+opacity:0;
+}
+}
+
+
+/* LOVE SCREEN */
+
+#loveFinal{
+
+background:
+rgba(255,20,147,.3);
+
+padding:40px;
+
+border-radius:30px;
+
+backdrop-filter:
+blur(15px);
+
+box-shadow:
+0 0 50px
+rgba(255,0,100,.8);
+
+animation:
+loveBeat
+1s infinite;
+}
+
+@keyframes
+loveBeat{
+
+0%{
+transform:
+translate(-50%,-50%)
+scale(1);
+}
+
+50%{
+transform:
+translate(-50%,-50%)
+scale(1.1);
+}
+
+100%{
+transform:
+translate(-50%,-50%)
+scale(1);
+}
+}
+
+</style>
+
+
+<script>
+
+/* LAST SCREEN */
+
+function showLastLove(){
+
+document
+.getElementById(
+"final")
+.style.display =
+"none";
+
+document
+.getElementById(
+"loveFinal")
+.style.display =
+"block";
+
+startFinalRain();
+
+}
+
+
+/* HEART RAIN */
+
+function createFinalHeart(){
+
+let h =
+document.createElement(
+"div");
+
+h.className =
+"finalHeart";
+
+h.innerHTML =
+"❤️";
+
+h.style.left =
+Math.random()*100
++"vw";
+
+h.style.fontSize =
+(20+
+Math.random()*60)
++"px";
+
+h.style.animationDuration =
+(3+
+Math.random()*4)
++"s";
+
+document.body
+.appendChild(h);
+
+setTimeout(()=>{
+
+h.remove();
+
+},7000);
+
+}
+
+
+/* START RAIN */
+
+function startFinalRain(){
+
+setInterval(
+
+createFinalHeart,
+
+100
+
+);
+
+}
+
+</script>
+<style>
+
+/* FIREWORKS */
+
+.firework{
+
+position:fixed;
+
+pointer-events:none;
+
+z-index:99999;
+
+animation:
+fireBoom
+2s linear forwards;
+}
+
+@keyframes
+fireBoom{
+
+0%{
+
+transform:
+scale(0);
+
+opacity:1;
+}
+
+50%{
+
+transform:
+scale(2);
+opacity:1;
+}
+
+100%{
+
+transform:
+scale(4);
+opacity:0;
+}
+}
+
+
+/* FLOATING LOVE */
+
+.floatLove{
+
+position:fixed;
+
+pointer-events:none;
+
+font-size:28px;
+
+font-weight:bold;
+
+color:white;
+
+text-shadow:
+0 0 20px red;
+
+z-index:99999;
+
+animation:
+floatUp
+6s linear forwards;
+}
+
+@keyframes
+floatUp{
+
+0%{
+
+transform:
+translateY(0);
+
+opacity:1;
+}
+
+100%{
+
+transform:
+translateY(-100vh);
+
+opacity:0;
+}
+}
+
+</style>
+
+
+<script>
+
+/* FIREWORK */
+
+function createFirework(){
+
+let f =
+document.createElement(
+"div");
+
+f.className =
+"firework";
+
+f.innerHTML =
+"🎆";
+
+f.style.left =
+Math.random()*100
++"vw";
+
+f.style.top =
+Math.random()*100
++"vh";
+
+f.style.fontSize =
+(30+
+Math.random()*50)
++"px";
+
+document.body
+.appendChild(f);
+
+setTimeout(()=>{
+
+f.remove();
+
+},2000);
+
+}
+
+
+/* FLOAT LOVE */
+
+function createLove(){
+
+let l =
+document.createElement(
+"div");
+
+l.className =
+"floatLove";
+
+l.innerHTML =
+"I LOVE YOU ❤️";
+
+l.style.left =
+Math.random()*100
++"vw";
+
+l.style.top =
+"100vh";
+
+document.body
+.appendChild(l);
+
+setTimeout(()=>{
+
+l.remove();
+
+},6000);
+
+}
+
+
+/* START */
+
+setInterval(
+
+createFirework,
+
+3000
+
+);
+
+setInterval(
+
+createLove,
+
+1000
+
+);
+
+</script>
+<style>
+
+/* STARS */
+
+.star{
+
+position:fixed;
+
+pointer-events:none;
+
+z-index:1;
+
+animation:
+starBlink
+2s infinite;
+}
+
+@keyframes
+starBlink{
+
+0%{
+opacity:.2;
+transform:
+scale(1);
+}
+
+50%{
+opacity:1;
+transform:
+scale(1.5);
+}
+
+100%{
+opacity:.2;
+transform:
+scale(1);
+}
+}
+
+
+/* GLOW HEART */
+
+.glowHeart{
+
+position:fixed;
+
+pointer-events:none;
+
+z-index:2;
+
+animation:
+glowFloat
+8s linear forwards;
+}
+
+@keyframes
+glowFloat{
+
+0%{
+
+transform:
+translateY(0)
+scale(.5);
+
+opacity:1;
+}
+
+100%{
+
+transform:
+translateY(-120vh)
+scale(1.5);
+
+opacity:0;
+}
+}
+
+</style>
+
+
+<script>
+
+/* CREATE STARS */
+
+function createStar(){
+
+let s =
+document.createElement(
+"div");
+
+s.className =
+"star";
+
+s.innerHTML =
+"✨";
+
+s.style.left =
+Math.random()*100
++"vw";
+
+s.style.top =
+Math.random()*100
++"vh";
+
+s.style.fontSize =
+(10+
+Math.random()*20)
++"px";
+
+document.body
+.appendChild(s);
+
+setTimeout(()=>{
+
+s.remove();
+
+},3000);
+
+}
+
+setInterval(
+
+createStar,
+
+200
+
+);
+
+
+/* GLOW HEARTS */
+
+function createGlowHeart(){
+
+let h =
+document.createElement(
+"div");
+
+h.className =
+"glowHeart";
+
+h.innerHTML =
+"💖";
+
+h.style.left =
+Math.random()*100
++"vw";
+
+h.style.bottom =
+"-50px";
+
+h.style.fontSize =
+(20+
+Math.random()*40)
++"px";
+
+document.body
+.appendChild(h);
 
 setTimeout(()=>{
 
@@ -1663,515 +1495,214 @@ h.remove();
 }
 
 setInterval(
-createHeart,
-300
+
+createGlowHeart,
+
+700
+
 );
 
-// =========================
-// START
-// =========================
+</script>
+<style>
 
-window.onload=()=>{
+/* LOADING SCREEN */
 
-revealEnglish();
+#loading{
 
-};
+position:fixed;
 
-// =========================
-// PLAY BUTTON
-// =========================
+top:0;
 
-playBtn.onclick=()=>{
+left:0;
 
-music.play();
+width:100%;
 
-intro.style.display=
-"none";
+height:100%;
 
-setTimeout(()=>{
+background:
+linear-gradient(
+#ffb6c1,
+#ff1493);
 
-photos.style.display=
-"block";
+display:flex;
 
-startSlideShow();
+justify-content:center;
 
-},5000);
+align-items:center;
 
-};
-```
-```javascript id="part8js"
-// =========================
-// PHOTO SLIDESHOW
-// =========================
+flex-direction:column;
 
-const photoSection =
-document.getElementById(
-"photos"
-);
-
-const loveStory =
-document.getElementById(
-"loveStory"
-);
-
-const photoLine =
-document.getElementById(
-"photoLine"
-);
-
-const photoList =
-document.querySelectorAll(
-".photo"
-);
-
-// =========================
-// ROMANTIC LINES
-// =========================
-
-const lines=[
-
-"Oka chance isthava? Jeevitantam motham 🫀 ikkada pettukoni chusukunta.",
-
-"Padhi nelalu mosi kanna mee ammakku nuvvu sonthamaithe, innaaluga manasulo mostunna naku kuda nuvvu sontamey...",
-
-"Prema andhariki dhorakadhhu. Dhorikithey poraadaali.",
-
-"Rallani poojinche desham lo raathi ni premichadam thappemi kadhu.",
-
-"Entha thittukuna kottukunna No one can replace you, bananagram.",
-
-"Opika ekkuva em cheppina vintavu. Kashtam ayina, sukham ayina life is always better with You.",
-
-"Eh problem vachina she is always there to fight against the world, holding my hand.",
-
-"Life bagundhi rah deepu. Nitho life motham nithoney nadipovale ani undi.",
-
-"Ni Prema kosamey jivistha. Ni kosamey premistha. Nithoney na oopirini vadilestha.",
-
-"Na kallutho chusina ni Prema naa kallalu nvey unte bagundhi anipisthundhi.",
-
-"Chachipoye antha prema undi rah ni midha. Aa chavvu ni kuda champeysthundi nepye na prema."
-
-];
-
-let currentPhoto=0;
-
-// =========================
-// START SLIDESHOW
-// =========================
-
-function startSlideShow(){
-
-photoList[0]
-.classList.add(
-"active"
-);
-
-photoLine.innerHTML=
-lines[0];
-
-const slide=
-setInterval(()=>{
-
-photoList[
-currentPhoto
-]
-.classList.remove(
-"active"
-);
-
-currentPhoto++;
-
-if(
-currentPhoto>=
-photoList.length
-){
-
-clearInterval(
-slide
-);
-
-photoSection
-.style.display=
-"none";
-
-setTimeout(()=>{
-
-loveStory
-.style.display=
-"block";
-
-startLoveStory();
-
-},1000);
-
-return;
-
+z-index:999999;
 }
 
-photoList[
-currentPhoto
-]
-.classList.add(
-"active"
-);
+#loading h1{
 
-photoLine.style.opacity=0;
+font-size:40px;
 
-setTimeout(()=>{
-
-photoLine.innerHTML=
-lines[
-currentPhoto
-];
-
-photoLine.style.opacity=1;
-
-},500);
-
-},5000);
-
-}
-```
-```javascript id="part9js"
-// =========================
-// TELUGU LOVE STORY
-// =========================
-
-const storyText =
-document.getElementById(
-"storyText"
-);
-
-const ocean =
-document.getElementById(
-"ocean"
-);
-
-// =========================
-// MESSAGE
-// =========================
-
-const teluguMessage =
-
-`మనం మొదటిసారి కలిసినప్పుడు,
-
-నాకు కావలసింది
-కేవలం ఒక స్నేహం మాత్రమే.
-
-ప్రేమలో పడతానని
-నేను ఎప్పుడూ అనుకోలేదు.
-
-ఎలాంటి వాగ్దానాలు లేవు...
-
-ఎలాంటి కలలు లేవు...
-
-ఎలాంటి ఆశలు కూడా లేవు...
-
-నెమ్మదిగా
-మరచిపోలేని జ్ఞాపకంగా
-మారిన
-
-ఒక అందమైన
-స్నేహం మాత్రమే.
-
-కొద్దికొద్దిగా...
-
-మనం ఒకరినొకరం
-అర్థం చేసుకోవడం
-ప్రారంభించాం.
-
-ఎక్కువగా
-మాట్లాడకపోయినా,
-
-మన హృదయాలు
-మాత్రం దగ్గరయ్యాయి.
-
-రోజులు
-నెలలుగా మారాయి...
-
-ఆ ప్రయాణంలో
-ఎప్పుడో,
-
-స్నేహం
-మరింత లోతైన
-బంధంగా
-మారిపోయింది —
-
-మనం ఊహించని
-ఒక ప్రేమగా.
-
-బహుశా ప్రేమ
-అలా మొదలవుతుందేమో...
-
-పెద్ద పెద్ద
-వాగ్దానాలతో కాదు...
-
-ఏమీ ఆశించకుండా
-కలిసిన
-ఇద్దరు అపరిచితులు,
-
-ఒకరి జీవితంలో
-ఒకరు ఎంత
-ముఖ్యమో
-
-తెలుసుకునే
-ఆ నిశ్శబ్ద
-ప్రయాణంతో....💌
-
-నా చివరి శ్వాస వరకు
-
-నేను నిన్ను
-
-ఎప్పటికీ
-ప్రేమిస్తూనే
-ఉంటాను. ❤️
-
-HAPPIEST BIRTHDAY
-MY DEAR LOVE ❤️
-
-♡5♡7♡6💌
-
-నా బంగారానికి
-అప్పుడే
-20 years
-వచ్చేశాయి...
-
-కాని
-నువ్వు
-ఎప్పటికీ
-నాకు
-ఒక చిన్న
-పాపవే....🫂❤️`;
-
-// =========================
-// START STORY
-// =========================
-
-function startLoveStory(){
-
-storyText.innerHTML =
-teluguMessage;
-
-// Scroll
-
-let pos=100;
-
-const scroll=
-setInterval(()=>{
-
-pos-=0.2;
-
-storyText.style.transform=
-`translateY(${pos}%)`;
-
-if(pos<-120){
-
-clearInterval(
-scroll
-);
-
+animation:
+loadingBeat
+1s infinite;
 }
 
-},50);
+@keyframes
+loadingBeat{
 
-// Hold 30 sec
-
-setTimeout(()=>{
-
-loveStory
-.style.display=
-"none";
-
-ocean
-.style.display=
-"block";
-
-startOcean();
-
-},30000);
-
-}
-```
-```javascript id="part10js"
-// =========================
-// OCEAN + HEART RAIN
-// =========================
-
-const final =
-document.getElementById(
-"final"
-);
-
-const heartRain =
-document.getElementById(
-"hearts"
-);
-
-// =========================
-// START OCEAN
-// =========================
-
-function startOcean(){
-
-startHeartRain();
-
-// Ocean message
-setTimeout(()=>{
-
-ocean.style.display=
-"none";
-
-final.style.display=
-"block";
-
-showFinal();
-
-},15000);
-
-}
-
-// =========================
-// HEART RAIN
-// =========================
-
-function startHeartRain(){
-
-const rain=
-setInterval(()=>{
-
-const heart=
-document.createElement(
-"div"
-);
-
-heart.className=
-"heart";
-
-heart.innerHTML=
-"❤️";
-
-heart.style.left=
-Math.random()*100
-+"%";
-
-heart.style.animationDuration=
-(3+
-Math.random()*4)
-+"s";
-
-heartRain
-.appendChild(
-heart
-);
-
-setTimeout(()=>{
-
-heart.remove();
-
-},7000);
-
-},200);
-
-// Stop rain
-setTimeout(()=>{
-
-clearInterval(
-rain
-);
-
-},15000);
-
-}
-
-// =========================
-// FINAL SCREEN
-// =========================
-
-function showFinal(){
-
-const card=
-document.querySelector(
-".final-card"
-);
-
-card.animate([
-
-{
-opacity:0,
+0%{
 transform:
-"translate(-50%,-40%) scale(.8)"
-},
-
-{
-opacity:1,
-transform:
-"translate(-50%,-50%) scale(1)"
+scale(1);
 }
 
-],{
+50%{
+transform:
+scale(1.1);
+}
 
-duration:2000,
-fill:"forwards"
+100%{
+transform:
+scale(1);
+}
+}
 
-});
+</style>
 
-// Floating hugs
-setInterval(()=>{
 
-const hug=
-document.createElement(
-"div"
-);
+<div id="loading">
 
-hug.innerHTML=
-"🫂";
+<h1>
+❤️ HAPPIEST BRITHDAY NANNA  ❤️
+</h1>
 
-hug.style.position=
-"absolute";
+<p>
+nikey suprise
+</p>
 
-hug.style.left=
-Math.random()*100
-+"%";
+</div>
 
-hug.style.top=
-Math.random()*100
-+"%";
 
-hug.style.fontSize=
-(30+
-Math.random()*40)
-+"px";
+<script>
 
-hug.style.opacity=
-".2";
+/* REMOVE LOADING */
 
-hug.style.pointerEvents=
-"none";
-
-final.appendChild(
-hug
-);
+window.onload =
+function(){
 
 setTimeout(()=>{
 
-hug.remove();
+document
+.getElementById(
+"loading")
+.style.display =
+"none";
 
 },4000);
 
-},600);
+};
+
+
+/* TYPEWRITER */
+
+function typeWriter(
+element,
+text,
+speed){
+
+let i=0;
+
+function typing(){
+
+if(
+i<
+text.length
+){
+
+element.innerHTML +=
+text.charAt(i);
+
+i++;
+
+setTimeout(
+typing,
+speed
+);
 
 }
 
-// =========================
-// END
-// =========================
+}
+
+typing();
+
+}
+
+</script>
+<script>
+
+/* PRELOAD PHOTOS */
+
+const preloadImages = [];
+
+photos.forEach(photo => {
+
+    const img =
+    new Image();
+
+    img.src =
+    photo;
+
+    preloadImages
+    .push(img);
+
+});
+
+
+/* PRELOAD SONG */
+
+music.load();
+
+
+/* DISABLE RIGHT CLICK */
+
+document
+.addEventListener(
+"contextmenu",
+
+function(e){
+
+e.preventDefault();
+
+});
+
+
+/* DISABLE DRAG */
+
+document
+.addEventListener(
+"dragstart",
+
+function(e){
+
+e.preventDefault();
+
+});
+
+
+/* PAGE READY */
+
+document
+.addEventListener(
+
+"DOMContentLoaded",
+
+function(){
 
 console.log(
+
 "❤️ HAPPIEST BIRTHDAY MY DEAR LOVE ❤️"
+
 );
 
-console.log(
-"❤️ IT'S YOUR MAN ❤️"
-);
-```
+});
+
+</script>
+
+</body>
+</html>

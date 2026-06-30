@@ -89,11 +89,10 @@ linear-gradient(
 
 #introText{
 
-position:absolute;
 
 width:80%;
 
-left:10%;
+
 
 font-size:23px;
 
@@ -103,24 +102,30 @@ text-align:center;
 
 animation:
 introScroll
-35s linear forwards;
+45s linear forwards;
 }
-
 @keyframes introScroll{
 
-from{
+    0%{
+        top:100%;
+        opacity:0;
+    }
 
-top:100%;
+    10%{
+        top:30%;
+        opacity:1;
+    }
 
-opacity:0;
-}
+    90%{
+        top:30%;
+        opacity:1;
+    }
 
-to{
+    100%{
+        top:-170%;
+        opacity:0;
+    }
 
-top:-170%;
-
-opacity:1;
-}
 }
 
 /* SLIDESHOW */
@@ -161,33 +166,29 @@ box-shadow:
 0 0 50px
 rgba(255,255,255,.5);
 }
-
 #slideText{
 
-position:absolute;
+    position: relative;
 
-bottom:20px;
+    margin: 20px auto 0;
 
-left:50%;
+    width: 90%;
 
-transform:
-translateX(-50%);
+    background: rgba(255,0,100,0.4);
 
-width:90%;
+    padding: 15px;
 
-background:
-rgba(255,0,100,.4);
+    border-radius: 15px;
 
-padding:15px;
+    font-size: 22px;
 
-border-radius:15px;
+    color: white;
 
-font-size:22px;
+    text-align: center;
 
-backdrop-filter:
-blur(8px);
+    backdrop-filter: blur(8px);
+
 }
-
 /* FINAL */
 
 #final{
@@ -385,12 +386,25 @@ src="photo1.jpg">
 
 <div id="loveFinal">
 
-I LOVE YOU
-<br>
-MY DEAR
-<br>
-DEEPU
-BANGARAM
+    ONCE AGAIN
+    <br>
+    HAPPI BIRTHDAY
+    <br>
+    MY LOVE 😘
+
+    <br><br>
+
+    THAKUUUU SO MUCH
+    <br>
+    RAH DEEPU BANGARAM ♥️
+
+    <br><br>
+
+    I LOVE YOU FOREVER ♾️
+
+    <br><br>
+
+    SORRY MAA...🙇🏼
 
 </div>
 <style>

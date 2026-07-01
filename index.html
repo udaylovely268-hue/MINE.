@@ -75,14 +75,14 @@ z-index:999;
 
 position:absolute;
 
-width:100%;
+width:100 %;
 
-height:100vh;
+height:100 vh;
 
 overflow:hidden;
 
 background:
-linear-gradient(
+linear-gradient (
 #ffc0cb,
 #ff69b4);
 }
@@ -91,11 +91,15 @@ linear-gradient(
 
 position:absolute;
 
-width:80%;
+width:80 %;
 
-left:10%;
-
-font-size:23px;
+left:10 %;
+color: white;
+font-weight: bold;
+text-shadow: 2 px 2 px 10 px black;
+z-index: 9999;
+top: 100 %;
+font-size:23 px;
 
 line-height:2;
 
@@ -103,7 +107,7 @@ text-align:center;
 
 animation:
 introScroll
-40 s linear forwards;
+60 s linear forwards;
 }
 
 @keyframes introScroll{
@@ -112,7 +116,7 @@ from{
 
 top:100%;
 
-opacity:0;
+opacity:1;
 }
 
 to{
@@ -127,7 +131,7 @@ opacity:1;
 
 #slideshow{
 
-display:none;
+display:flex;
 
 position:absolute;
 
@@ -272,8 +276,7 @@ z-index:9999;
 src="song.mp3"
 type="audio/mpeg">
 </audio>
-
-<div id="intro">
+<div id="introContainer">
 
 <div id="introText">
 
@@ -758,27 +761,15 @@ currentPhoto
 const img =
 document
 .getElementById(
-"slideImage");
-
-img.style.animation =
-"none";
-
-void img.offsetWidth;
-
-img.style.animation =
-"photoZoom 25s linear";
-
+"slideImage")
 
 currentPhoto++;
 
 
 /* NEXT PHOTO */
+img.style.animation = "photoZoom 25s linear";
 
-if(
-currentPhoto
-<
-photos.length
-){
+if (currentPhoto < photos.length) {
 
 setTimeout(
 
@@ -1590,7 +1581,7 @@ document
 .style.display =
 "none";
 
-},45000);
+},4500);
 
 };
 

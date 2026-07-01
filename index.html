@@ -163,17 +163,12 @@ rgba(255,255,255,.5);
 }
 
 #slideText{
-
-position:absolute;
-
-bottom:20px;
-
-left:50%;
-
-transform:
-translateX(-50%);
-
-width:90%;
+position: static;
+width: 90%;
+margin: 15px auto;
+display: block;
+text-align: center;
+clear:both;
 
 background:
 rgba(255,0,100,.4);
@@ -372,8 +367,7 @@ src="photo1.jpg">
 <div id="slideText">
 </div>
 
-</div>
-
+<div id="slideText">
 </div>
 
 <div id="final">
@@ -732,7 +726,7 @@ document
 
 showPhoto();
 
-},35000);
+},50000);
 
 
 /* SHOW PHOTO */
